@@ -24,7 +24,11 @@ const  Country = ({country}) => {
             <p>Flag:
                 <br/>
                 <br/>
-                <img src={country.flags.png} alt=""></img>
+                <img 
+                className="image"
+                src={country.flags.png}
+                alt="Image Not Fount"
+                ></img>
             </p>
             <p className="links"><a href= {country.maps.googleMaps}
                   target="_blank"> Map
