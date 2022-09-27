@@ -1,7 +1,6 @@
-
 const  Country = ({country}) => {
     // console.log(country)
-    
+
     function Click() {
         function eventHandler() {
             console.log("Loading...")
@@ -19,11 +18,9 @@ const  Country = ({country}) => {
     
     return (
         <dt className="countrys-container">
-           <p>Country: {country.name.common}</p>
-            <p>Capital: {country.capital}</p>
-            <p>Flag:
-                <br/>
-                <br/>
+           <p><b>Country :</b> {country.name.common}</p>
+           <p><b>Capital :</b> {country.capital}</p>
+           <p><b>Flag</b> <br/><br/>
                 <img 
                 className="image"
                 src={country.flags.png}
@@ -34,10 +31,8 @@ const  Country = ({country}) => {
                   target="_blank"> Map
                </a></p>
                <Click/>
-            
         </dt>
-        
     );
-}
+};
 
 export default Country;
